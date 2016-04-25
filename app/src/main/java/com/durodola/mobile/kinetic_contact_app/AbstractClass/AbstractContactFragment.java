@@ -12,7 +12,7 @@ import android.support.v4.app.Fragment;
  */
 public abstract class AbstractContactFragment extends Fragment {
 
-
+    // check for internet
     public boolean isConnected() {
         ConnectivityManager connectivity = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
 
@@ -27,6 +27,7 @@ public abstract class AbstractContactFragment extends Fragment {
         return false;
     }
 
+    // no internet
     public void noNetworkAlert() {
         // display dialog when no internet
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());

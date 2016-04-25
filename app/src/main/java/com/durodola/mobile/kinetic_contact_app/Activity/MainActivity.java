@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+// switch fragment
   public  void Switchfragment(int layout, Fragment fragment, String addresss) {
         FragmentManager fm = getSupportFragmentManager();
         //fm.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left);
