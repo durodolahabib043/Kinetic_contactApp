@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kinetic_contact_app</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="displayname">displayname</string>
+    <string name="gender">Gender :</string>
+    <string name="email">Email :</string>
+    <string name="dob">Location :</string>
+    <string name="phone">Phone :</string>
+</resources>
