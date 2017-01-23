@@ -25,11 +25,19 @@ public class CompassAdapter extends RecyclerView.Adapter<CompassAdapter.PersonVi
     ArrayList<Contact> contactResultArrayList;
     Context context;
     Contact contact;
+    String master;
+    String master2;
+    int hotfix = 1;
     MapFragment mapFragment;
+
     public CompassAdapter(Context context, ArrayList<Contact> contactResultArrayList) {
         this.contactResultArrayList = contactResultArrayList;
         this.context = context;
+        // olawepo
+
+
     }
+
     @Override
     public PersonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_card_layout, parent, false);
@@ -53,7 +61,7 @@ public class CompassAdapter extends RecyclerView.Adapter<CompassAdapter.PersonVi
         holder.location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // switchFragment(mapFragment);
+                // switchFragment(mapFragment);
                 if (context == null)
                     return;
                 if (context instanceof MainActivity) {
@@ -74,6 +82,7 @@ public class CompassAdapter extends RecyclerView.Adapter<CompassAdapter.PersonVi
     public int getItemCount() {
         return contactResultArrayList.size();
     }
+
     public static class PersonViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
         TextView name;
@@ -82,6 +91,7 @@ public class CompassAdapter extends RecyclerView.Adapter<CompassAdapter.PersonVi
         TextView email;
         TextView phone;
         TextView location;
+
         PersonViewHolder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.cv);
